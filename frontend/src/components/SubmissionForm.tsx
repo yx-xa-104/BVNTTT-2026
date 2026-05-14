@@ -244,7 +244,7 @@ export default function SubmissionForm() {
                     <input
                       {...register("studentId")}
                       className="w-full p-4 bg-white/60 text-slate-900 border border-slate-200/60 focus:bg-white focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 outline-none transition-all rounded-xl shadow-sm"
-                      placeholder="2023xxxx"
+                      placeholder="2305HTTAxxx"
                     />
                     {errors.studentId && <p className="text-brand-red text-xs">{errors.studentId.message}</p>}
                   </div>
@@ -254,7 +254,7 @@ export default function SubmissionForm() {
                     <input
                       {...register("classId")}
                       className="w-full p-4 bg-white/60 text-slate-900 border border-slate-200/60 focus:bg-white focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 outline-none transition-all rounded-xl shadow-sm"
-                      placeholder="K68..."
+                      placeholder="2305xxxx"
                     />
                     {errors.classId && <p className="text-brand-red text-xs">{errors.classId.message}</p>}
                   </div>
@@ -275,7 +275,7 @@ export default function SubmissionForm() {
                       {...register("email")}
                       type="email"
                       className="w-full p-4 bg-white/60 text-slate-900 border border-slate-200/60 focus:bg-white focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 outline-none transition-all rounded-xl shadow-sm"
-                      placeholder="email@domain.com"
+                      placeholder="email@gmail.com"
                     />
                     {errors.email && <p className="text-brand-red text-xs">{errors.email.message}</p>}
                   </div>
@@ -333,7 +333,7 @@ export default function SubmissionForm() {
                               <input
                                 {...register(`teamMembers.${index}.studentId` as const)}
                                 className="w-full p-2.5 text-sm bg-slate-50 border border-slate-200 focus:border-brand-blue outline-none rounded-lg"
-                                placeholder="2023xxxx"
+                                placeholder="2305HTTAxxx"
                               />
                               {errors.teamMembers?.[index]?.studentId && <p className="text-brand-red text-xs mt-1">{errors.teamMembers[index]?.studentId?.message}</p>}
                             </div>
